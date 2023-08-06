@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Yonex Astrox 100 ZZ",
+    "manufacturer": "Yonex",
+    "balance": "Head Heavy",
+    "weight": "87gr",
+    "stiffness": "stiff",
+    "color": "white and black",
+    "weighU": "4U - 3U",
+    "gripSize": "G4 - G5"
+  },
+  {
+    "name": "Yonex Arcsaber 11 Pro",
+    "manufacturer": "Yonex",
+    "balance": "Even Balance",
+    "weight": "85gr",
+    "stiffness": "stiff",
+    "color": "red and black",
+    "weighU": "4U - 3U",
+    "gripSize": "G4 - G5"
+  },
+  {
+    "name": "Victor Jetspeed",
+    "manufacturer": "Victor",
+    "balance": "Slightly Head Heavy",
+    "weight": "79gr",
+    "stiffness": "stiff",
+    "color": "white and black",
+    "weighU": "4U - 3U",
+    "gripSize": "G4 - G5"
+  }
+]
