@@ -6,9 +6,11 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 
+//git subtree push --prefix dist origin gh-pages
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '',
+  base: 'racketComparison',
   plugins: [
     vue({ 
       template: { transformAssetUrls }
