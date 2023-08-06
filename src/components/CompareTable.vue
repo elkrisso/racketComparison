@@ -1,6 +1,11 @@
 <template>
   <v-data-table
-    :headers="headers"
+    :headers="[
+      { title: '', align: 'start', sortable: false, key: 'attribute' },
+      { title: 'Racket 1', align: 'start', sortable: false, key: 'racket1' },
+      { title: 'Racket 2', align: 'start', sortable: false, key: 'racket2' },
+      { title: 'Racket 3', align: 'start', sortable: false, key: 'racket3' },
+    ]"
     :items="comparisonItems"
     item-value="name"
     class="elevation-1"
@@ -40,7 +45,7 @@
 
 <script setup lang="ts">
 import { BadmintonRacket } from "@/main";
-import { computed, reactive, ref } from "vue";
+import { computed, reactive, readonly, ref } from "vue";
 import { VDataTable } from "vuetify/labs/VDataTable";
 import jsonRacketList from "../assets/rackets.json";
 const rackets: Array<BadmintonRacket> = jsonRacketList;
@@ -104,37 +109,6 @@ let comparisonItems = reactive([
     racket3: "",
   },
 ]);
-
-const headers = [
-  {
-    title: "",
-    align: "start",
-    sortable: false,
-    key: "attribute",
-    width: 100,
-  },
-  {
-    title: "Racket 1",
-    align: "start",
-    sortable: false,
-    key: "racket1",
-    width: 100,
-  },
-  {
-    title: "Racket 2",
-    align: "start",
-    sortable: false,
-    key: "racket2",
-    width: 100,
-  },
-  {
-    title: "Racket 3",
-    align: "start",
-    sortable: false,
-    key: "racket3",
-    width: 100,
-  },
-];
 
 function racketSelectionChanged(racketSlot: string, racketName: string) {
   const racket = findRacketInJson(racketName);
